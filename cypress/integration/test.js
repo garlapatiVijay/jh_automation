@@ -3,11 +3,12 @@
 describe('Home Page', () =>
 {
 
-beforeEach(() => {
+beforeEach(() => 
+    {
         cy.visit ('https://www.jameshardie.com.au/')
       })
 
-it('User searches for the product HardiePanel Compressed Sheet from Floors product', () =>
+it('User search for HARDIEPANEL COMPRESSED SHEET from FLOORS product', () =>
     {
     cy.get('.jss21').type("Floors{enter}")
     cy.get('#react-autowhatever-1--item-0 > .jss418 > .jss30 > .jss65 > .jss420 > span > strong').click()
@@ -16,7 +17,7 @@ it('User searches for the product HardiePanel Compressed Sheet from Floors produ
     // cy.contains('About us').click({force: true})
     })
 
-    it('User searches for the product HardiePanel Compressed Sheet from Floors product', () =>
+it('User search for STRIA CLADDING from RENDERS product', () =>
     {
     cy.get('.jss21').type("Render{enter}")
     cy.get('#react-autowhatever-1--item-0 > .jss418 > .jss30 > .jss65 > .jss420 > span > strong').click()
