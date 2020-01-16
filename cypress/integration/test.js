@@ -11,5 +11,9 @@ it('User searches for the product HardiePanel Compressed Sheet from Floors produ
 
 it('myBuilder Successful login', () =>{
     cy.visit ('https://myhardies.jameshardie.com.au/log-in')
-    
+    cy.get(':nth-child(1) > .jss143 > .jss214 > .jss224').type("the.jim.farrugia@gmail.com")
+    cy.get(':nth-child(2) > .jss143 > .jss214 > .jss224').type("qweqwe")
+    cy.get('.jss122').click()
+    // cy.wait(4000)
+    // cy.get('.jss312.jss316 > .jss82 > .jss321 > .jss314').click()
 })
