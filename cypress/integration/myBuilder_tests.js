@@ -8,7 +8,7 @@ beforeEach(() =>
     cy.viewport(2880, 1800)
     })
     
-it.only('myBuilder Successful login', () =>
+it('myBuilder Successful login', () =>
 {
     cy.get(':nth-child(1) > .jss143 > .jss214 > .jss224').type("the.jim.farrugia@gmail.com")
     cy.get(':nth-child(2) > .jss143 > .jss214 > .jss224').type("qweqwe")
