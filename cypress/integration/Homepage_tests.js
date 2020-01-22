@@ -1,35 +1,30 @@
 /// <reference types="cypress" />
 
-import {navigate, searchButton } from "../page-objects/Homepage"
+import {navigate, searchButton, searchFloors, validationFloorsPage, searchRender, validationRenderPage, clickAboutus, 
+validationAboutUsPage } from "../page-objects/Homepage"
 
 describe('Home Page', () =>
 {
 beforeEach(() => 
-    {
-        navigate()
-        cy.viewport(2880, 1800)
-      })
-
+{
+    navigate()
+    cy.viewport(2880, 1800)
+    })
 it('User search for HARDIEPANEL COMPRESSED SHEET from FLOORS product', () =>
-    {
-    cy.get('.jss21').type("Floors{enter}")
+{
+    searchFloors()
     searchButton()
-    cy.get('.jss216').should('have.text','HardiePanel Compressed Sheet')
-    // cy.contains('PRODUCT DETAILS').click({force: true})
-    // cy.contains('About us').click({force: true})
+    validationFloorsPage()
     })
-
 it('User search for STRIA CLADDING from RENDERS product', () =>
-    {
-    cy.get('.jss21').type("Render{enter}")
+{
+    searchRender()
     searchButton()
-    cy.get('.jss216').should('have.text','Stria Cladding')
-    // cy.contains('PRODUCT DETAILS').click({force: true})
-    // cy.contains('About us').click({force: true})
+    validationRenderPage()
     })
-
 it('User navigatest to ABOUT US page', () =>
-    {
-    cy.contains('About us').click({force: true})
+{
+    clickAboutus()
+    validationAboutUsPage()
     })
 })

@@ -1,7 +1,8 @@
 {
   "name": "jh_automation",
   "version": "1.0.0",
-  "description": "",
+  "description": "Automation of James Hardie Website, myBuilder Login",
+  "author": "Vijay Garlapati",
   "main": "webpack.config.js",
   "dependencies": {
     "axios": "^0.19.1",
@@ -10,7 +11,11 @@
   },
   "devDependencies": {
     "mem": ">=4.0.0",
-    "js-yaml": ">=3.13.1"
+    "js-yaml": ">=3.13.1",
+    "eslint": "5.16.0",
+    "eslint-plugin-cypress": "2.8.1",
+    "eslint-plugin-cypress-dev": "2.1.0",
+    "eslint-plugin-mocha": "5.3.0"
   },
   "scripts": {
     "cypress": "cypress open",
@@ -21,7 +26,7 @@
     "url": "git+https://github.com/garlapatiVijay/jh_automation.git"
   },
   "keywords": [],
-  "author": "",
+ 
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/garlapatiVijay/jh_automation/issues"
